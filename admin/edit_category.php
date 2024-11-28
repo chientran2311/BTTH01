@@ -1,7 +1,6 @@
 <?php
 require("connection.php");
 $ma_tloai = $_GET['id'];
-
 $sql = "SELECT ten_tloai from theloai where ma_tloai = '$ma_tloai'";
 $stmt = $conn ->prepare($sql);
 $stmt -> execute();
